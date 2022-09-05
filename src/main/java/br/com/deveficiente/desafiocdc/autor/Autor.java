@@ -24,7 +24,7 @@ public class Autor {
     private String nome;
     @NotBlank
     @Email
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String email;
     @NotBlank
     @Size(max = 400)

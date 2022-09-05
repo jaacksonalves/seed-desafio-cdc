@@ -10,10 +10,12 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.Instant;
 
+//2.5
 @Entity
 @Table(name = "autores")
 public class Autor {
 
+    //2.5
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

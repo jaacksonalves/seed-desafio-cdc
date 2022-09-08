@@ -27,7 +27,7 @@ public class NovoAutorController {
     @PostMapping
     public void cadastra(@Valid @RequestBody NovoAutorRequest request) {
         //1
-        var novoAutor = request.toAutor();
+        var novoAutor = request.toModel();
 
         autorRepository.save(novoAutor);
     }

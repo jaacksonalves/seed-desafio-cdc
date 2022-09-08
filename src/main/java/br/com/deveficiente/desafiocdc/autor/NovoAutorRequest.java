@@ -12,7 +12,7 @@ public record NovoAutorRequest(//1.5
                                @NotBlank @Email @CampoUnico(campo = "email", classeDominio = Autor.class) String email,
                                @NotBlank @Size(max = 400) String descricao) {
     //1
-    public Autor toAutor() {
+    public Autor toModel() {
         return new Autor(this.nome, this.email, this.descricao);
     }
 }

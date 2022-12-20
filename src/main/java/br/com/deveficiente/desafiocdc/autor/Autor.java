@@ -51,4 +51,12 @@ public class Autor {
     @Deprecated(since = "1.0")
     public Autor() {
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
 }

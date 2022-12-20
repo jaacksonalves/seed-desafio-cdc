@@ -26,4 +26,8 @@ public class Categoria {
     @Deprecated(since = "1.0")
     public Categoria() {
     }
+
+    public String getNome() {
+        return nome;
+    }
 }

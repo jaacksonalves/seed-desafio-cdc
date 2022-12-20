@@ -52,7 +52,7 @@ class NovoLivroControllerTest {
                 1L, 1L);
         var livroString = mapper.writeValueAsString(livroRequest);
 
-        mockMvc.perform(post("/livro").contentType(APPLICATION_JSON).content(livroString))
+        mockMvc.perform(post("/livros").contentType(APPLICATION_JSON).content(livroString))
                 .andExpect(status().isOk());
     }
 }

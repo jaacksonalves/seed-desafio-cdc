@@ -11,12 +11,11 @@ import javax.transaction.Transactional;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/livro")
+@RequestMapping("/livros")
 public class NovoLivroController {
 
     @PersistenceContext
     private EntityManager manager;
-
 
     @PostMapping
     @Transactional
